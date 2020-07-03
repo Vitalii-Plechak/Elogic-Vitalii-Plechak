@@ -27,7 +27,7 @@ a{
 }
 .header__top-inner{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding-top: 10px;
 }
 .header__top-link{
@@ -40,18 +40,79 @@ a{
     font-weight: 700;
   }
 }
+.header__top-line{
+  display: flex;
+  justify-content: space-between;
+}
 .header__top-button{
-  button{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
+  display: flex;
+  .dropdown__my-account,
+  .dropdown__money-rate{
+    position: relative;
+    &:hover{
+      .dropdown-content{
+        display: block;
+        transform: translateY(0);
+      }
+    }
+    .dropbtn{
+      font-size: 14px;
+      text-transform: uppercsase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      padding-left: 25px;
+      padding-right: 10px;
+      padding-bottom: 15px;
+      overflow-x: hidden;
+      &:hover::before{
+          transform: rotate(180deg);
+          transition: all .2s;
+      }
+    }
+    .icon-angle-down::before{
+      right: -5px;
+      position: absolute;
+      transform: rotate(0deg);
+    }
+    .dropdown-content{
+      z-index: 5;
+      position: absolute;
+      left: -15px;
+      top: 30px;
+      transform: translateY(-150%);
+      background-color: #ecedeb;
+      box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+      width: 175px;
+      li{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        transition: all .2s;
+        &:hover{
+          background-color: #fff;
+        }
+        a{
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .dropdown__money-rate{
+    .dropdown-content{
+      width: 110px;
+      left: -35px;
+    }
   }
 }
+
+
+
+
 
 
 
@@ -64,15 +125,60 @@ a{
   position: relative;
   height: 65px;
 }
+.header__phone-box{
+  display: flex;
+}
+.header__phone{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  a+a{
+    margin-top: 5px;
+  }
+}
 .header__logo{
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
 }
+.header__form{
+  form{
+    position: relative;
+    input{
+      width: 240px;
+      height: 30px;
+      padding: 0 35px 0 5px;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #000;
+      &::placeholder{
+        color: #000;
+      }
+    }
+  }
+  button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    &::before{
+      content: "\e900";
+      font-family: 'icomoon';
+      font-size: 12px;
+    }
+  }
+}
+
 
 
 .header__nav{
   background-color: #e0e1dd;
+  width: 100%;
 }
 .header__nav-inner{
   min-height: 60px;

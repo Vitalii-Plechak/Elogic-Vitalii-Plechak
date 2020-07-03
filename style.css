@@ -19,7 +19,7 @@ a {
 }
 .header__top-inner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding-top: 10px;
 }
 .header__top-link img {
@@ -30,15 +30,78 @@ a {
   color: #fff;
   font-weight: 700;
 }
-.header__top-button button {
+.header__top-line {
+  display: flex;
+  justify-content: space-between;
+}
+.header__top-button {
+  display: flex;
+}
+.header__top-button .dropdown__my-account,
+.header__top-button .dropdown__money-rate {
+  position: relative;
+}
+.header__top-button .dropdown__my-account:hover .dropdown-content,
+.header__top-button .dropdown__money-rate:hover .dropdown-content {
+  display: block;
+  transform: translateY(0);
+}
+.header__top-button .dropdown__my-account .dropbtn,
+.header__top-button .dropdown__money-rate .dropbtn {
+  font-size: 14px;
+  text-transform: uppercsase;
+  font-weight: 700;
+  letter-spacing: 2px;
   background-color: transparent;
-  border: none;
   outline: none;
   cursor: pointer;
+  border: none;
   color: #fff;
+  padding-left: 25px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  overflow-x: hidden;
+}
+.header__top-button .dropdown__my-account .dropbtn:hover::before,
+.header__top-button .dropdown__money-rate .dropbtn:hover::before {
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+.header__top-button .dropdown__my-account .icon-angle-down::before,
+.header__top-button .dropdown__money-rate .icon-angle-down::before {
+  right: -5px;
+  position: absolute;
+  transform: rotate(0deg);
+}
+.header__top-button .dropdown__my-account .dropdown-content,
+.header__top-button .dropdown__money-rate .dropdown-content {
+  z-index: 5;
+  position: absolute;
+  left: -15px;
+  top: 30px;
+  transform: translateY(-150%);
+  background-color: #ecedeb;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  width: 175px;
+}
+.header__top-button .dropdown__my-account .dropdown-content li,
+.header__top-button .dropdown__money-rate .dropdown-content li {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  transition: all 0.2s;
+}
+.header__top-button .dropdown__my-account .dropdown-content li:hover,
+.header__top-button .dropdown__money-rate .dropdown-content li:hover {
+  background-color: #fff;
+}
+.header__top-button .dropdown__my-account .dropdown-content li a,
+.header__top-button .dropdown__money-rate .dropdown-content li a {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 16px;
+}
+.header__top-button .dropdown__money-rate .dropdown-content {
+  width: 110px;
+  left: -35px;
 }
 .header__inner {
   display: flex;
@@ -48,13 +111,55 @@ a {
   position: relative;
   height: 65px;
 }
+.header__phone-box {
+  display: flex;
+}
+.header__phone {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.header__phone a + a {
+  margin-top: 5px;
+}
 .header__logo {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header__form form {
+  position: relative;
+}
+.header__form form input {
+  width: 240px;
+  height: 30px;
+  padding: 0 35px 0 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+}
+.header__form form input::placeholder {
+  color: #000;
+}
+.header__form button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__form button::before {
+  content: "\e900";
+  font-family: 'icomoon';
+  font-size: 12px;
 }
 .header__nav {
   background-color: #e0e1dd;
+  width: 100%;
 }
 .header__nav-inner {
   min-height: 60px;
@@ -69,4 +174,3 @@ a {
 .header__nav-inner ul li + li {
   margin-left: 30px;
 }
-/*# sourceMappingURL=style.css.map */

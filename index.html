@@ -5,41 +5,63 @@
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="reser.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="reset.css">
 </head>
 <body>
 <header class="header">
-<div class="container">
-	<div class="header__top-inner">
-		<div class="header__top-link">
-			<img class="tis-icon globe-icon" src="https://www.theirishstore.com/static/version1593185765/frontend/TheIrishStore/default/en_US/images/tis-icon-globe.svg" alt="globe icon">
-			<a href="#">
-				Extended 180 Day Free Returns
-			</a>
-		</div>
-		<div class="header__top-button">
-			<button>My account</button>
-			<button>USD ($)</button>
+	<div class="container">
+		<div class="header__top-inner">
+			<div class="header__top-line">
+				<div class="header__top-link">
+					<img class="tis-icon globe-icon" src="https://www.theirishstore.com/static/version1593185765/frontend/TheIrishStore/default/en_US/images/tis-icon-globe.svg" alt="globe icon">
+					<a href="#">
+						Extended 180 Day Free Returns
+					</a>
+				</div>
+				<div class="header__top-button">
+					<div class="dropdown__my-account">
+						<button class="dropbtn icon-angle-down">MY ACCOUNT</button>
+						<ul id="dropdown-account" class="dropdown-content">
+							<li><a href="#home">my account</a></li>
+							<li><a href="#about">my wish list</a></li>
+							<li><a href="#contact">sign in</a></li>
+						</ul>
+					</div>
+					<div class="dropdown__money-rate">
+						<button class="dropbtn icon-angle-down">USD</button>
+						<ul id="dropdown-money_rate" class="dropdown-content">
+							<li><a href="#AUD">AUD (A$)</a></li>
+							<li><a href="#GBP">GBP (£)</a></li>
+							<li><a href="#CAD">CAD (CA$)</a></li>
+							<li><a href="#EUR">EUR (€)</a></li>
+							<li><a href="#NZD ">NZD (NZ$)</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__inner">
+				<div class="header__phone-box">
+					<div class="header__phone-icon">
+						<img src="https://www.theirishstore.com/static/version1593186521/frontend/TheIrishStore/default/en_US/images/tis-icon-phone.svg" alt="">
+					</div>
+					<div class="header__phone">
+						<a href="tel:18007075037">US 1-800-707-50-37</a>
+						<a href="tel:35318611590">US +353 1 861 1590</a>
+					</div>
+				</div>
+				<div class="header__logo">
+					<img src="https://www.theirishstore.com/static/version1593437008/frontend/TheIrishStore/default/en_US/images/tis-logo.svg" title="The Irish Store" alt="The Irish Store">
+				</div>
+				<div class="header__form">
+					<form>
+						<input type="text" placeholder="SEARCH" required>
+						<button type="button"></button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="header__inner">
-		<div class="header__phone">
-			<a href="tel:18007075037">US 1-800-707-50-37</a>
-			<a href="tel:35318611590">US +353 1 861 1590</a>
-		</div>
-		<div class="header__logo">
-			<img src="https://www.theirishstore.com/static/version1593437008/frontend/TheIrishStore/default/en_US/images/tis-logo.svg" title="The Irish Store" alt="The Irish Store">
-		</div>
-		<div class="header__form">
-			<form>
-				<input type="text" placeholder="SEARCH" required>
-				<label>
-					<a href="#"></a>
-				</label>
-			</form>
-		</div>
-	</div>
-</div>
 	<div class="header__nav">
 		<div class="container">
 			<div class="header__nav-line">
@@ -59,5 +81,7 @@
 		</div>
 	</div>
 </header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
