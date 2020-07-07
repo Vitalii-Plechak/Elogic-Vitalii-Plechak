@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
@@ -50,14 +51,15 @@
 						<a href="tel:35318611590">US +353 1 861 1590</a>
 					</div>
 				</div>
-				<div class="header__logo">
+				<a class="header__logo" href="#">
 					<img src="https://www.theirishstore.com/static/version1593437008/frontend/TheIrishStore/default/en_US/images/tis-logo.svg" title="The Irish Store" alt="The Irish Store">
-				</div>
+				</a>
 				<div class="header__form">
 					<form>
 						<input type="text" placeholder="SEARCH" required>
 						<button type="button"></button>
 					</form>
+					<a class="header__form-shoping_cart" href="https://www.theirishstore.com/checkout/cart/"></a>
 				</div>
 			</div>
 		</div>
@@ -67,20 +69,259 @@
 			<div class="header__nav-line">
 				<nav class="header__nav-inner">
 					<ul>
-						<li><a href="#">Women</a></li>
-						<li><a href="#">Men</a></li>
-						<li><a href="#">Kids</a></li>
-						<li><a href="#">Jawelry</a></li>
-						<li><a href="#">Homeware</a></li>
-						<li><a href="#">Irish Food</a></li>
-						<li><a href="#">Irish gifts</a></li>
-						<li><a href="#">Clearance</a></li>
+						<li>
+							<a href="#">Women</a>
+							<ul class="header__nav-dropdown">
+								<li><a href="#">New Arrivals</a></li>
+								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Capes & Shawls</a></li>
+								<li><a href="#">Sweater</a></li>
+								<li><a href="#">Cardigans</a></li>
+								<li><a href="#">T-shirts & Sweatshirts</a></li>
+								<li><a href="#">Hand-Knit Arans</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Men</a>
+							<ul class="header__nav-dropdown">
+								<li><a href="#">New Arrivals</a></li>
+								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Sweater</a></li>
+								<li><a href="#">Cardigans</a></li>
+								<li><a href="#">T-shirts & Sweatshirts</a></li>
+								<li><a href="#">Hand-Knit Arans</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Kids</a>
+							<ul class="header__nav-dropdown">
+								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Sweater</a></li>
+								<li><a href="#">T-shirts & Sweatshirts</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Jawelry</a>
+							<div class="header__nav-dropdown-box">
+								<ul class="header__nav-dropdown-big">
+									<li><span>department</span></li>
+									<li><a href="#">New Arrivals</a></li>
+									<li><a href="#">Bracelets & Charms</a></li>
+									<li><a href="#">Brooches</a></li>
+									<li><a href="#">Cufllinks</a></li>
+									<li><a href="#">Earrings</a></li>
+									<li><a href="#">Jewerly Sets & Boxes</a></li>
+									<li><a href="#">Pendants & Necklaces</a></li>
+									<li><a href="#">Religious</a></li>
+									<li><a href="#">Rings</a></li>
+									<li><a href="#">Watches</a></li>
+									<li><a href="#">Weeding & Engagement</a></li>
+								</ul>
+								<ul class="header__nav-dropdown-big">
+									<li><span>style</span></li>
+									<li><a href="#">Claddagh</a></li>
+									<li><a href="#">Connemara</a></li>
+									<li><a href="#">Contemporary</a></li>
+									<li><a href="#">Trinity Knot</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Homeware</a>
+							<div class="header__nav-dropdown-box">
+								<ul class="header__nav-dropdown-big">
+									<li><span>department</span></li>
+									<li><a href="#">New Arrivals</a></li>
+									<li><a href="#">Art</a></li>
+									<li><a href="#">Blankets & Throws</a></li>
+									<li><a href="#">Crystal & Glassware</a></li>
+									<li><a href="#">linen</a></li>
+									<li><a href="#">Ornaments</a></li>
+									<li><a href="#">Pottery</a></li>
+									<li><a href="#">Tableware</a></li>
+								</ul>
+								<ul class="header__nav-dropdown-big">
+									<li><span>irish brands</span></li>
+									<li><a href="#">Belleek China</a></li>
+									<li><a href="#">Galway Crystal</a></li>
+									<li><a href="#">Tipperary Crystal</a></li>
+									<li><a href="#">Waterford Crystal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Irish Food</a>
+						</li>
+						<li>
+							<a href="#">Irish gifts</a>
+							<div class="header__nav-dropdown-box">
+								<ul class="header__nav-dropdown-big">
+									<li><span>shop by recipient</span></li>
+									<li><a href="#">For Her</a></li>
+									<li><a href="#">For Him</a></li>
+									<li><a href="#">For Girls</a></li>
+									<li><a href="#">For Boys</a></li>
+									<li><a href="#">For Babies</a></li>
+									<li><a href="#">For Dogs</a></li>
+								</ul>
+								<ul class="header__nav-dropdown-big">
+									<li><span>shop by category</span></li>
+									<li><a href="#">Authentic Irish Clothing</a></li>
+									<li><a href="#">Homeware</a></li>
+									<li><a href="#">Irish Aran Sweater</a></li>
+									<li><a href="#">Irish Celtic Jewerly</a></li>
+									<li><a href="#">Our Favorite Gifts</a></li>
+									<li><a href="#">Irish Gifts</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Clearance</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</div>
 </header>
+<section class="proposition">
+		<div class="proposition__inner">
+			<div class="hero-image" style="background-image: url('https://cdnmedia.theirishstore.com/wysiwyg/Homepage/Homepage_Hero/IndependenceDayHero2020-1.jpg'); cursor: pointer;">
+				<div class="container">
+					<div class="proposition__wrapper">
+						<div class="proposition__item">
+							<div class="cybermondaytxt">INDEPENDENCE DAY SALE</div>
+							<div class="cmondaypercentofftxt">25% OFF</div>
+							<div class="everythingofftxt">EVERYTHING + FREE GIFT</div>
+							<div class="_2freegiftsovertxt">On all orders over $69 | Use code <span style="font-weight: bold; color: #f1c761;">4JULY</span></div>
+							<div>
+								<a class="buttonstylescmondaysale w-button" href="https://www.theirishstore.com/women">SHOP WOMEN</a>
+								<a class="buttonstylescmondaysale w-button" href="https://www.theirishstore.com/men">SHOP MEN</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<section class="features">
+	<div class="container">
+		<div class="features__inner">
+			<div class="features__item">
+				<div class="features__item-images">
+					<img class="tis-icon tis-shipping-icon" src="https://cdnstatic.theirishstore.com/static/frontend/TheIrishStore/default/en_US/images/tis-shipping-icon.svg" alt="shipping icon">
+				</div>
+				<div class="features__item-content">
+					<div class="features__item-content_title">
+						Free Returns
+					</div>
+					<div class="features__item-content_text">
+						up to 180 days
+					</div>
+				</div>
+			</div>
+			<div class="features__item">
+				<div class="features__item-images">
+					<img class="tis-icon tis-shopping-icon" src="https://cdnstatic.theirishstore.com/static/frontend/TheIrishStore/default/en_US/images/tis-shopping-icon.svg" alt="shipping icon">
+				</div>
+				<div class="features__item-content">
+					<div class="features__item-content_title">
+						Fast Shipping
+					</div>
+					<div class="features__item-content_text">
+						Ireland to USA
+					</div>
+				</div>
+			</div>
+			<div class="features__item">
+				<div class="features__item-images">
+					<img class="tis-icon tis-review-icon" src="https://cdnstatic.theirishstore.com/static/frontend/TheIrishStore/default/en_US/images/tis-review-icon.svg" alt="review icon">
+				</div>
+				<div class="features__item-content">
+					<div class="features__item-content_title">
+						<img class="feefo-logo" src="https://www.theirishstore.com/static/version1593185765/frontend/TheIrishStore/default/en_US/images/feefo.png" alt="FeefoLogo" width="55px" height="13px"> <span>Gold</span>
+					</div>
+					<div class="features__item-content_text">
+						98% customer satisfaction
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="categories">
+	<div class="container">
+		<div class="categories__inner">
+			<div class="categories__item">
+				<img src="https://cdnmedia.theirishstore.com/wysiwyg/Homepage/Homepage_3_Categories/HP_women09Jan2020.jpg" alt="Irish Knitwear Clothing" width="480" height="480">
+				<a href="https://www.theirishstore.com/men" class="categories__item-content">
+					<button title="Irish Knitwear Clothing" class="overlay" style="background: rgba(0,0,0,0.5);">Shop Women</button>
+				</a>
+			</div>
+			<div class="categories__item">
+				<img src="https://cdnmedia.theirishstore.com/wysiwyg/Homepage/Homepage_3_Categories/Homeware-Blanket.jpg" alt="Irish Gifts">
+				<a href="https://www.theirishstore.com/men" class="categories__item-content">
+					<button title="Irish Gifts" class="overlay" style="background: rgba(0,0,0,0.5);">Shop Irish Gifts</button>
+				</a>
+			</div>
+			<div class="categories__item">
+				<img src="https://cdnmedia.theirishstore.com/wysiwyg/Homepage/Homepage_3_Categories/HP_men09Jan2020.jpg" alt="Shop Sale" width="480" height="480">
+				<a href="https://www.theirishstore.com/men" class="categories__item-content">
+					<button title="Shop Sale" class="overlay" style="background: rgba(0,0,0,0.5);">Shop Men</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ship-container">
+	<div class="container">
+		<div class="ship-container__inner">
+			<div class="ship-container__content">
+				<div class="ship-header-text">$9.95 Shipping for 1st item - all other Items ship FREE</div>
+				<div class="ship-header-text ship-sub-text">DELIVERED FROM IRELAND TO THE USA WITHIN 3-7 DAYS</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="banner-exclusive">
+	<div class="container">
+		<div class="banner-exclusive__inner">
+			<div class="banner-exclusive__text">
+				<div class="banner-exclusive__heading">Exclusive to<br>The Irish Store</div>
+				<div class="banner-exclusive__sub">Find a little piece of Ireland you can’t get anywhere else.</div>
+				<a class="banner-exclusive__button" href="https://www.theirishstore.com/exclusive">SHOP NOW</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="features-second">
+	<div class="container">
+		<div class="features-second__inner">
+			<div class="features-second__item">
+				<div class="features-second__item-images">
+					<img style="cursor: pointer;" src="https://cdnmedia.theirishstore.com/wysiwyg/Homepage/Homepage_2_Categories/04-Hero-Jewelry.jpg" alt="The Irish Store Irish Jewelry">
+				</div>
+				<div class="features-second__item-content">
+					<h3>Celtic Jewelry</h3>
+					<a title="Irish Gifts" href="https://www.theirishstore.com/celtic-jewelry">
+						<button class="white">Shop Jewelry</button>
+					</a>
+				</div>
+			</div>
+			<div class="features-second__item">
+				<div class="features-second__item-images">
+					<img style="cursor: pointer;" src="https://cdnmedia.theirishstore.com/wysiwyg/Homepage/Homepage_2_Categories/HP_Home07Oct19.jpg" alt="The Irish Store Irish Homeware">
+				</div>
+				<div class="features-second__item-content">
+					<h3>Homeware Gifts</h3>
+					<a title="Irish Knitwear" href="https://www.theirishstore.com/irish-gifts-for-the-home">
+						<button class="white">Shop Homeware Gifts</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="main.js"></script>
 </body>
