@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -557,12 +557,12 @@
     <div class="container">
         <div class="video-presentation__inner">
             <div class="video-presentation__item">
-                <div class="video-presentation__item-images">
-                    <img src="https://i.ytimg.com/vi/rMtA10i-yIU/hqdefault.jpg">
+                <a class="video-presentation__item-images" data-fancybox href="https://youtu.be/rMtA10i-yIU">
+                    <img class="card-img-top img-fluid" src="https://i.ytimg.com/vi/rMtA10i-yIU/hqdefault.jpg"/>
                     <div class="video-presentation__item-images_play">
-                        <div class="video-presentation__item-images_play-triangle"></div>
+                       <button class="video-presentation__item-images_play-triangle" type="button"></button>
                     </div>
-                </div>
+                </a>
                 <div class="video-presentation__item-title">
                     Traditional Irish Aran Sweaters
                 </div>
@@ -575,10 +575,12 @@
             </div>
             <div class="video-presentation__item">
                 <div class="video-presentation__item-images">
-                    <img src="https://i.ytimg.com/vi/BBBfVZsqhrw/hqdefault.jpg">
-                    <div class="video-presentation__item-images_play">
-                        <div class="video-presentation__item-images_play-triangle"></div>
-                    </div>
+                    <a class="video-presentation__item-images" data-fancybox href="https://youtu.be/BBBfVZsqhrw">
+                        <img class="card-img-top img-fluid" src="https://i.ytimg.com/vi/BBBfVZsqhrw/hqdefault.jpg"/>
+                        <div class="video-presentation__item-images_play">
+                            <button class="video-presentation__item-images_play-triangle" type="button"></button>
+                        </div>
+                    </a>
                 </div>
                 <div class="video-presentation__item-title">
                     Traditional Irish Aran Sweaters
@@ -595,7 +597,7 @@
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
-<script src="js/jquery.fancybox.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
