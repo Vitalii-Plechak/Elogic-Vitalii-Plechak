@@ -239,18 +239,18 @@ a {
 .header__nav-inner ul li + li {
   margin-left: 30px;
 }
-.header__nav-dropdown-box {
+.header__nav-inner .header__nav-dropdown-box {
   position: absolute;
   top: 60px;
   display: none;
 }
-.header__nav-dropdown-big,
-.header__nav-dropdown {
+.header__nav-inner .header__nav-dropdown-big,
+.header__nav-inner .header__nav-dropdown {
   display: none;
   flex-direction: column;
   border: none;
   box-shadow: none;
-  padding: 15px !important;
+  padding: 15px;
   min-width: 160px;
   border-top: 1px solid #252c26;
   z-index: 5;
@@ -258,21 +258,21 @@ a {
   background: #e0e1dd;
   overflow: visible;
 }
-.header__nav-dropdown-big li + li,
-.header__nav-dropdown li + li {
-  margin: unset !important;
+.header__nav-inner .header__nav-dropdown-big li + li,
+.header__nav-inner .header__nav-dropdown li + li {
+  margin: unset;
 }
-.header__nav-dropdown-big li,
-.header__nav-dropdown li {
-  padding: unset !important;
+.header__nav-inner .header__nav-dropdown-big li,
+.header__nav-inner .header__nav-dropdown li {
+  padding: unset;
 }
-.header__nav-dropdown-big li:hover::before,
-.header__nav-dropdown li:hover::before {
-  width: unset !important;
-  height: unset !important;
+.header__nav-inner .header__nav-dropdown-big li:hover::before,
+.header__nav-inner .header__nav-dropdown li:hover::before {
+  width: unset;
+  height: unset;
 }
-.header__nav-dropdown-big li span,
-.header__nav-dropdown li span {
+.header__nav-inner .header__nav-dropdown-big li span,
+.header__nav-inner .header__nav-dropdown li span {
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 5px;
@@ -281,21 +281,21 @@ a {
   display: block;
   font-size: 15px;
 }
-.header__nav-dropdown-big li a,
-.header__nav-dropdown li a {
+.header__nav-inner .header__nav-dropdown-big li a,
+.header__nav-inner .header__nav-dropdown li a {
   display: block;
   line-height: inherit;
   color: #252c26;
   padding: 8px 5px;
   transition: all 0.2s;
-  text-transform: unset !important;
-  font-size: 14px !important;
+  text-transform: unset;
+  font-size: 14px;
 }
-.header__nav-dropdown-big li a:hover,
-.header__nav-dropdown li a:hover {
+.header__nav-inner .header__nav-dropdown-big li a:hover,
+.header__nav-inner .header__nav-dropdown li a:hover {
   background-color: #fff;
 }
-.header__nav-dropdown {
+.header__nav-inner .header__nav-dropdown {
   top: 60px;
   position: absolute;
 }
